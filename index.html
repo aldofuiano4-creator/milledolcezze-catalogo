@@ -4,148 +4,125 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>MILLEDOLCEZZE - Caramelle Gommose</title>
+<title>MILLEDOLCEZZE - Crea la tua Candy Box</title>
 
-<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #fff5fb;
-    color: #333;
-}
-
-header {
-    background: linear-gradient(135deg, #ff4fa3, #ffcc00);
-    color: white;
-    text-align: center;
-    padding: 35px 15px;
-}
-
-header h1 {
-    font-size: 45px;
-    margin: 0;
-}
-
-header p {
-    font-size: 20px;
-}
-
-.container {
-    padding: 20px;
-    max-width: 900px;
-    margin: auto;
-}
-
-.card {
-    background: white;
-    border-radius: 20px;
-    padding: 20px;
-    margin: 20px 0;
-    box-shadow: 0 5px 15px #ddd;
-    text-align: center;
-}
-
-.card h2 {
-    color: #ff4fa3;
-}
-
-.button {
-    display: inline-block;
-    padding: 15px 25px;
-    margin: 10px;
-    border-radius: 30px;
-    background: #25D366;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.tiktok {
-    background: black;
-}
-
-footer {
-    background: #ff4fa3;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-</style>
+<link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
 <header>
-<h1>MILLEDOLCEZZE 🍬</h1>
+<h1>🍬 MILLEDOLCEZZE 🍬</h1>
 <p>Il mondo delle caramelle gommose</p>
-<p>Dolcezza, qualità e tante sorprese!</p>
 </header>
 
 
-<div class="container">
+<section class="hero">
+<h2>Crea la tua Candy Box personalizzata</h2>
+<p>Scegli il formato e le tue caramelle preferite</p>
+</section>
 
 
-<div class="card">
-<h2>🍭 Candy Box</h2>
-<p>Scopri le nostre box di caramelle gommose assortite:</p>
+<section class="box-scelta">
 
-<h3>🍬 Candy Box 1 Kg</h3>
-<h3>🍬 Candy Box 1,5 Kg</h3>
-<h3>🍬 Candy Box 2 Kg</h3>
+<h2>1️⃣ Scegli la tua Candy Box</h2>
 
-</div>
+<button onclick="scegliBox('1 Kg',10)">
+Candy Box 1 Kg<br>
+10 gusti
+</button>
+
+<button onclick="scegliBox('1,5 Kg',12)">
+Candy Box 1,5 Kg<br>
+12 gusti
+</button>
+
+<button onclick="scegliBox('2 Kg',15)">
+Candy Box 2 Kg<br>
+15 gusti
+</button>
+
+</section>
 
 
-<div class="card">
-<h2>🥤 Prodotti Americani</h2>
+<section id="configuratore">
 
-<p>
-Snack, patatine, cioccolata e bevande USA:
+<h2>2️⃣ Scegli le tue caramelle</h2>
+
+<p id="contatore">
+Scegli prima la Candy Box
 </p>
 
-<p>
-Coca Cola - Fanta - Monster - Mogu Mogu<br>
-Cheetos - Pringles - Lays e tante novità
-</p>
+
+<div id="caramelle">
+
+
+<button onclick="aggiungi('Orsetti frutta')">
+🍬 Orsetti frutta +
+</button>
+
+<button onclick="aggiungi('Bottiglie cola')">
+🥤 Bottiglie cola +
+</button>
+
+<button onclick="aggiungi('Coccodrilli')">
+🐊 Coccodrilli +
+</button>
+
+<button onclick="aggiungi('Cuori ripieni')">
+❤️ Cuori ripieni +
+</button>
+
+<button onclick="aggiungi('Fragole panna')">
+🍓 Fragole panna +
+</button>
+
+<button onclick="aggiungi('Pesche')">
+🍑 Pesche +
+</button>
+
+<button onclick="aggiungi('Angurie')">
+🍉 Angurie +
+</button>
+
+<button onclick="aggiungi('Coca Cola gommosa')">
+🥤 Coca Cola gommosa +
+</button>
+
+<button onclick="aggiungi('Dragibus')">
+🌈 Dragibus +
+</button>
+
+<button onclick="aggiungi('Orsetti colorati')">
+🐻 Orsetti colorati +
+</button>
+
 
 </div>
 
-
-<div class="card">
-<h2>🎁 Le nostre creazioni</h2>
-
-<p>
-Bouquet di caramelle gommose<br>
-Box regalo personalizzate<br>
-Tante idee dolci per ogni occasione
-</p>
-
-</div>
+</section>
 
 
-<div class="card">
 
-<h2>📲 Seguici e ordina</h2>
+<section class="riepilogo">
 
-<a class="button" href="#">
-WhatsApp
-</a>
+<h2>3️⃣ Il tuo ordine</h2>
 
-<a class="button tiktok" href="#">
-TikTok
-</a>
+<p id="boxScelta"></p>
 
-</div>
+<ul id="lista"></ul>
 
 
-</div>
+<button class="whatsapp" onclick="ordina()">
+📲 Ordina su WhatsApp
+</button>
 
 
-<footer>
-© MILLEDOLCEZZE - Tutti i diritti riservati 🍭
-</footer>
+</section>
 
+
+<script src="script.js"></script>
 
 </body>
 </html>
