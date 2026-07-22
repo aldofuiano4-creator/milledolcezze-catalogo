@@ -341,3 +341,7 @@ emoji: "⭐"
 }  
   
 ];
+
+window.caramelle = caramelle;
+
+];
