@@ -113,3 +113,25 @@ function ordina(){
 
 
 }
+window.onload = function(){
+
+    let contenitore = document.getElementById("caramelle");
+
+    caramelle.forEach(function(item){
+
+        let bottone = document.createElement("button");
+
+        bottone.innerHTML =
+        item.emoji + " " + item.nome + " +";
+
+        bottone.onclick = function(){
+
+            aggiungi(item.nome);
+
+        };
+
+        contenitore.appendChild(bottone);
+
+    });
+
+};
