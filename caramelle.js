@@ -344,4 +344,3 @@ emoji: "⭐"
 
 window.caramelle = caramelle;
 
-];
