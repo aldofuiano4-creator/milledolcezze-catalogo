@@ -120,9 +120,9 @@ window.onload = function(){
     caramelle.forEach(function(item){
 
         let bottone = document.createElement("button");
-
-        bottone.innerHTML =
-        item.emoji + " " + item.nome + " +";
+  bottone.innerHTML =
+"<img src='immagini/" + item.foto + "' width='100'><br>" +
+item.emoji + " " + item.nome + " +";
 
         bottone.onclick = function(){
 
