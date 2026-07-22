@@ -339,4 +339,5 @@ nome: "Stella marina gommosa grande",
 categoria: "Animali",
 emoji: "⭐"
 }  
+  
 ];
