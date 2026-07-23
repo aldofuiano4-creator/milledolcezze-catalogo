@@ -75,6 +75,18 @@ function aggiorna(){
 
     }
 
+
+    let riepilogo = document.getElementById("boxScelta");
+
+
+    if(riepilogo){
+
+        riepilogo.innerHTML =
+        "🍬 Candy Box scelta: " + box +
+        "<br>Gusti scelti: " + scelte.length + "/" + limite;
+
+    }
+
 }
 
 
