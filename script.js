@@ -10,7 +10,8 @@ function scegliBox(nome, massimo){
     scelte = [];
 
     document.getElementById("boxScelta").innerHTML =
-    "Candy Box scelta: " + box;
+    "✅ Hai scelto Candy Box " + nome;
+
 
     aggiorna();
 
