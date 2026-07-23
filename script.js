@@ -111,11 +111,7 @@ function aggiorna(){
     encodeURIComponent(messaggio);
 
 
-    window.open(link, "_blank");
-
-}
-
-    }
+window.open(link, "_blank");
 
 }
 
