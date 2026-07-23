@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -13,14 +15,20 @@
 <body>
 
 <header>
+
 <h1>🍬 MILLEDOLCEZZE 🍬</h1>
+
 <p>Il mondo delle caramelle gommose</p>
+
 </header>
 
 
 <section class="hero">
+
 <h2>Crea la tua Candy Box personalizzata</h2>
-<p>Scegli il formato e le tue caramelle preferite</p>
+
+<p>Scegli il formato e componi la tua box con i tuoi gusti preferiti.</p>
+
 </section>
 
 
@@ -28,20 +36,27 @@
 
 <h2>1️⃣ Scegli la tua Candy Box</h2>
 
+<div class="box-buttons">
+
 <button onclick="scegliBox('1 Kg',10)">
-Candy Box 1 Kg<br>
-10 gusti
+🍬 Candy Box 1 Kg
+<br>
+<small>10 gusti</small>
 </button>
 
 <button onclick="scegliBox('1,5 Kg',12)">
-Candy Box 1,5 Kg<br>
-12 gusti
+🍬 Candy Box 1,5 Kg
+<br>
+<small>12 gusti</small>
 </button>
 
 <button onclick="scegliBox('2 Kg',15)">
-Candy Box 2 Kg<br>
-15 gusti
+🍬 Candy Box 2 Kg
+<br>
+<small>15 gusti</small>
 </button>
+
+</div>
 
 </section>
 
@@ -54,17 +69,43 @@ Candy Box 2 Kg<br>
 Scegli prima la Candy Box
 </p>
 
+<div class="barra">
+<div id="progress"></div>
+</div>
 
-<div id="caramelle">
+<input
+type="text"
+id="ricerca"
+placeholder="🔍 Cerca una caramella..."
+onkeyup="filtraCaramelle()">
 
+<div class="categorie">
 
+<button onclick="filtraCategoria('Tutte')">
+Tutte
+</button>
 
+<button onclick="filtraCategoria('Gommose')">
+Gommose
+</button>
 
+<button onclick="filtraCategoria('Frizzanti')">
+Frizzanti
+</button>
+
+<button onclick="filtraCategoria('Liquirizia')">
+Liquirizia
+</button>
+
+<button onclick="filtraCategoria('Marshmallow')">
+Marshmallow
+</button>
 
 </div>
 
-</section>
+<div id="caramelle"></div>
 
+</section>
 
 
 <section class="riepilogo">
@@ -75,17 +116,15 @@ Scegli prima la Candy Box
 
 <ul id="lista"></ul>
 
-
 <button class="whatsapp" onclick="ordina()">
 📲 Ordina su WhatsApp
 </button>
 
-
 </section>
-
 
 <script src="caramelle.js"></script>
 <script src="script.js"></script>
 
 </body>
+
 </html>
