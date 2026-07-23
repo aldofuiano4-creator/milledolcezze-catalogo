@@ -18,20 +18,14 @@ function scegliBox(nome, massimo){
 
 
 function aggiungi(nome){
-    ...
-}
 
+    if(box === ""){
 
-function aggiungiCaramella(nome){
+        alert("Scegli prima una Candy Box");
 
-    aggiungi(nome);
+        return;
 
-}
-
-
-function aggiorna(){
-    ...
-}
+    }
 
 
     if(scelte.length >= limite){
@@ -49,6 +43,14 @@ function aggiorna(){
 
 }
 
+
+function aggiungiCaramella(nome){
+
+    aggiungi(nome);
+
+}
+
+
 function aggiorna(){
 
     let lista = document.getElementById("lista");
@@ -61,21 +63,20 @@ function aggiorna(){
 
         scelte.forEach(function(caramella, indice){
 
-
             let elemento = document.createElement("li");
-
 
             elemento.innerHTML =
             (indice + 1) + ") " + caramella;
 
-
             lista.appendChild(elemento);
-
 
         });
 
     }
+
 }
+
+
 function ordina(){
 
     if(box === ""){
@@ -119,9 +120,10 @@ function ordina(){
     encodeURIComponent(messaggio);
 
 
-window.open(link, "_blank");
+    window.open(link, "_blank");
 
 }
+
 
 window.onload = function(){
 
@@ -129,7 +131,6 @@ window.onload = function(){
 
 
     if(contenitore){
-
 
         caramelle.forEach(function(item){
 
@@ -146,8 +147,8 @@ window.onload = function(){
             "<h3>" + item.emoji + " " + item.nome + "</h3>" +
 
             "<button onclick=\"aggiungiCaramella('" 
-+ item.nome.replace(/'/g, "\\'") +
-"')\">Aggiungi</button>";
+            + item.nome.replace(/'/g, "\\'") +
+            "')\">Aggiungi</button>";
 
 
             contenitore.appendChild(card);
@@ -155,14 +156,15 @@ window.onload = function(){
 
         });
 
-
     }
 
-};function rimuovi(indice){
+};
+
+
+function rimuovi(indice){
 
     scelte.splice(indice, 1);
 
     aggiorna();
 
 }
-
