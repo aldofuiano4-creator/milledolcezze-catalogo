@@ -68,6 +68,55 @@ function aggiorna(){
 
         });
 
+        function ordina(){
+
+    if(box === ""){
+
+        alert("Scegli prima una Candy Box");
+
+        return;
+
+    }
+
+
+    if(scelte.length === 0){
+
+        alert("Scegli almeno un gusto");
+
+        return;
+
+    }
+
+
+    let numero = "INSERISCI_NUMERO_WHATSAPP";
+
+
+    let messaggio =
+    "Ciao MILLEDOLCEZZE, vorrei ordinare una Candy Box da "
+    + box +
+    ".\n\nGusti scelti:\n";
+
+
+    scelte.forEach(function(caramella){
+
+        messaggio += "- " + caramella + "\n";
+
+    });
+
+
+    let link =
+    "https://wa.me/" +
+    numero +
+    "?text=" +
+    encodeURIComponent(messaggio);
+
+
+    window.open(link, "_blank");
+
+}
+
     }
 
 }
+
+
