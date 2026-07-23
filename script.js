@@ -32,3 +32,35 @@ function aggiungi(nome){
 
     aggiorna();
 }
+
+function aggiorna(){
+
+    let lista = document.getElementById("listaScelte");
+    let contatore = document.getElementById("contatore");
+
+    if(lista){
+
+        lista.innerHTML = "";
+
+        scelte.forEach(function(caramella, indice){
+
+            let elemento = document.createElement("li");
+
+            elemento.innerHTML =
+            (indice + 1) + ") " + caramella;
+
+            lista.appendChild(elemento);
+
+        });
+
+    }
+
+
+    if(contatore){
+
+        contatore.innerHTML =
+        "Gusti scelti: " + scelte.length + "/" + limite;
+
+    }
+
+}
