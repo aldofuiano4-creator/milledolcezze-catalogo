@@ -441,6 +441,63 @@ emoji: "☁️",
 foto: "marshmallow.jpeg"
 },
 
+{
+nome: "Delfini",
+categoria: "Gommose",
+emoji: "🐬",
+foto: "delfini.jpeg"
+},
+
+{
+nome: "Pesci twist colorati",
+categoria: "Gommose",
+emoji: "🐟",
+foto: "pesci-twist.jpeg"
+},
+
+{
+nome: "Tartarughe ripiene",
+categoria: "Gommose",
+emoji: "🐢",
+foto: "tartarughe-ripiene.jpeg"
+},
+
+{
+nome: "Fettine di pizza",
+categoria: "Gommose",
+emoji: "🍕",
+foto: "fettine-pizza.jpeg"
+},
+
+{
+nome: "Ananas gommose",
+categoria: "Gommose",
+emoji: "🍍",
+foto: "ananas.jpeg"
+},
+
+{
+nome: "Stelle frizzanti",
+categoria: "Frizzanti",
+emoji: "⭐",
+foto: "stelle-frizzanti.jpeg"
+},
+
+{
+nome: "Topolini con coda",
+categoria: "Gommose",
+emoji: "🐭",
+foto: "topolini.jpeg"
+},
+
+{
+nome: "Unicorni",
+categoria: "Gommose",
+emoji: "🦄",
+foto: "unicorni.jpeg"
+},
+
+
 
 
 
