@@ -67,7 +67,8 @@ function aggiorna(){
             let elemento = document.createElement("li");
 
             elemento.innerHTML =
-            (indice + 1) + ") " + caramella;
+(indice + 1) + ") " + caramella +
+" <button onclick=\"rimuovi(" + indice + ")\">❌ Rimuovi</button>";
 
             lista.appendChild(elemento);
 
