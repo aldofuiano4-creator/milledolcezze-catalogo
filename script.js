@@ -113,10 +113,10 @@ function ordina(){
     let numero = "INSERISCI_NUMERO_WHATSAPP";
 
 
-    let messaggio =
-    "Ciao MILLEDOLCEZZE, vorrei ordinare una Candy Box da "
-    + box +
-    ".\n\nGusti scelti:\n";
+let messaggio =
+"Ciao MILLEDOLCEZZE, vorrei ordinare:\n\n" +
+"🍬 Candy Box: " + box +
+"\n🍭 Gusti scelti:\n";
 
 
     scelte.forEach(function(caramella){
