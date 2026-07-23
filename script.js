@@ -141,9 +141,9 @@ window.onload = function(){
 
             "<h3>" + item.emoji + " " + item.nome + "</h3>" +
 
-            "<button onclick=\"aggiungi('" 
-            + item.nome +
-            "')\">Aggiungi</button>";
+            "<button onclick=\"aggiungiCaramella('" 
++ item.nome.replace(/'/g, "\\'") +
+"')\">Aggiungi</button>";
 
 
             contenitore.appendChild(card);
