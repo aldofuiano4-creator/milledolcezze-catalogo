@@ -383,9 +383,67 @@ nome: "Angurie",
 categoria: "Gommose",
 emoji: "🍉",
 foto: "angurie.jpeg"
-}
+},
 
-];
+{
+nome: "Ciucci chiavi a coca cola",
+categoria: "Gommose",
+emoji: "🍼",
+foto: "ciucci-coca-cola.jpeg"
+},
+
+{
+nome: "Ciucci frutta colorate",
+categoria: "Gommose",
+emoji: "🍼",
+foto: "ciucci-frutta.jpeg"
+},
+
+{
+nome: "Tartarughe verdi e arancioni",
+categoria: "Gommose",
+emoji: "🐢",
+foto: "tartarughe.jpeg"
+},
+
+{
+nome: "Pesci liquirizia",
+categoria: "Liquirizia",
+emoji: "🐟",
+foto: "pesci-liquirizia.jpeg"
+},
+
+{
+nome: "Barchette liquirizia",
+categoria: "Liquirizia",
+emoji: "⛵",
+foto: "barchette-liquirizia.jpeg"
+},
+
+{
+nome: "Girella liquirizia",
+categoria: "Liquirizia",
+emoji: "🌀",
+foto: "girella-liquirizia.jpeg"
+},
+
+{
+nome: "Liquirizia tubi ripieni",
+categoria: "Liquirizia",
+emoji: "🍬",
+foto: "tubi-liquirizia.jpeg"
+},
+
+{
+nome: "Marshmallow",
+categoria: "Marshmallow",
+emoji: "☁️",
+foto: "marshmallow.jpeg"
+},
+
+
+
+
 
 
 
