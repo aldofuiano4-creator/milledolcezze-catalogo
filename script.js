@@ -105,3 +105,39 @@ function ordina(){
     window.open(link, "_blank");
 
 }
+
+window.onload = function(){
+
+    let contenitore = document.getElementById("catalogo");
+
+
+    if(contenitore){
+
+        caramelle.forEach(function(item){
+
+
+            let card = document.createElement("div");
+
+            card.className = "caramella";
+
+
+            card.innerHTML =
+
+            "<img src='images/" + item.foto + "'>" +
+
+            "<h3>" + item.emoji + " " + item.nome + "</h3>" +
+
+
+            "<button onclick=\"aggiungi('" 
+            + item.nome +
+            "')\">Aggiungi</button>";
+
+
+            contenitore.appendChild(card);
+
+
+        });
+
+    }
+
+};
