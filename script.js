@@ -18,14 +18,20 @@ function scegliBox(nome, massimo){
 
 
 function aggiungi(nome){
+    ...
+}
 
-    if(box === ""){
 
-        alert("Scegli prima una Candy Box");
+function aggiungiCaramella(nome){
 
-        return;
+    aggiungi(nome);
 
-    }
+}
+
+
+function aggiorna(){
+    ...
+}
 
 
     if(scelte.length >= limite){
@@ -68,7 +74,9 @@ function aggiorna(){
 
         });
 
-        function ordina(){
+    }
+}
+function ordina(){
 
     if(box === ""){
 
