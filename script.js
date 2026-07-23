@@ -154,5 +154,11 @@ window.onload = function(){
 
     }
 
-};
+};function rimuovi(indice){
+
+    scelte.splice(indice, 1);
+
+    aggiorna();
+
+}
 
