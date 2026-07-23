@@ -497,6 +497,63 @@ emoji: "🦄",
 foto: "unicorni.jpeg"
 },
 
+{
+nome: "More granellate",
+categoria: "Gommose",
+emoji: "🫐",
+foto: "more-granellate.jpeg"
+},
+
+{
+nome: "Occhi gommosi",
+categoria: "Gommose",
+emoji: "👁️",
+foto: "occhi-gommosi.jpeg"
+},
+
+{
+nome: "Cervelletti",
+categoria: "Gommose",
+emoji: "🧠",
+foto: "cervelletti.jpeg"
+},
+
+{
+nome: "Dentiere",
+categoria: "Gommose",
+emoji: "😁",
+foto: "dentiere.jpeg"
+},
+
+{
+nome: "Carote",
+categoria: "Gommose",
+emoji: "🥕",
+foto: "carote.jpeg"
+},
+
+{
+nome: "Bandierine frizzanti",
+categoria: "Frizzanti",
+emoji: "🚩",
+foto: "bandierine.jpeg"
+},
+
+{
+nome: "Vermetti gommosi",
+categoria: "Gommose",
+emoji: "🪱",
+foto: "vermetti.jpeg"
+},
+
+{
+nome: "Palline piccole colorate",
+categoria: "Gommose",
+emoji: "🔴",
+foto: "palline-colorate.jpeg"
+}
+
+];
 
 
 
