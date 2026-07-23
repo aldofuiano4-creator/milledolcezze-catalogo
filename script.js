@@ -110,7 +110,7 @@ function ordina(){
     }
 
 
-    let numero = "INSERISCI_NUMERO_WHATSAPP";
+    let numero = "393669382980";
 
 
 let messaggio =
