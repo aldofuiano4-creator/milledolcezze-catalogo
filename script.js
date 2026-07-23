@@ -121,7 +121,7 @@ window.onload = function(){
 
         let bottone = document.createElement("button");
   bottone.innerHTML =
-"<img src='milledolcezze-catalogo/immagini/" + item.foto + "' width='100'><br>" +
+"<img src='immagini/" + item.foto + "' width='100'><br>" + +
 item.emoji + " " + item.nome + " +";
 
         bottone.onclick = function(){
