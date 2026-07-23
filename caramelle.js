@@ -342,8 +342,49 @@ emoji: "🕷️"
 nome: "Stella marina gommosa grande",
 categoria: "Animali",
 emoji: "⭐"
-}  
-  
+},
+{
+nome: "Coccodrilli",
+categoria: "Gommose",
+emoji: "🐊",
+foto: "coccodrilli.jpeg"
+},
+
+{
+nome: "Cuori ripieni",
+categoria: "Gommose",
+emoji: "❤️",
+foto: "cuori-ripieni.jpeg"
+},
+
+{
+nome: "Rotelle frutta",
+categoria: "Gommose",
+emoji: "🍥",
+foto: "rotelle-frutta.jpeg"
+},
+
+{
+nome: "Fragole panna",
+categoria: "Gommose",
+emoji: "🍓",
+foto: "fragole-panna.jpeg"
+},
+
+{
+nome: "Pesche",
+categoria: "Gommose",
+emoji: "🍑",
+foto: "pesche.jpeg"
+},
+
+{
+nome: "Angurie",
+categoria: "Gommose",
+emoji: "🍉",
+foto: "angurie.jpeg"
+}
+
 ];
 
 
