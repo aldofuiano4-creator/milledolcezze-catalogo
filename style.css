@@ -175,3 +175,10 @@ ul{
     color:#ff4fa3;
     margin:15px 0;
 }
+
+.box-buttons button:focus,
+.box-buttons button:active {
+    background:#ff4fa3;
+    color:white;
+    transform:scale(1.05);
+}
