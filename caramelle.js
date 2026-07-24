@@ -292,7 +292,6 @@ nome: "Palline piccole colorate",
 categoria: "Frizzanti",
 emoji: "⚪",
 foto: "immagini/palline-colorate.jpeg"
-  
 },
 
 {
