@@ -4,294 +4,294 @@ const caramelle = [
 nome: "Orsetti frutta",
 categoria: "Frutta",
 emoji: "🍬",
-foto: "images/IMG_8890.jpeg"
+foto: "immagini/IMG_8889.jpeg"
 },
 
 {
 nome: "Bottiglie cola",
 categoria: "Cola",
 emoji: "🥤",
-foto: "images/IMG_8889.jpeg"
+foto: "immagini/IMG_8889.jpeg"
 },
 
 {
 nome: "Coccodrilli",
 categoria: "Animali",
 emoji: "🐊",
-foto: "images/coccodrilli.jpeg"
+foto: "immagini/coccodrilli.jpeg"
 },
 
 {
 nome: "Cuori ripieni",
 categoria: "Cuori",
 emoji: "❤️",
-foto: "images/cuori-ripieni.jpeg"
+foto: "immagini/cuori-ripieni.jpeg"
 },
 
 {
 nome: "Rotelle frutta",
 categoria: "Frutta",
 emoji: "🍓",
-foto: "images/rotelle-frutta.jpeg"
+foto: "immagini/rotelle-frutta.jpeg"
 },
 
 {
 nome: "Fragole panna",
 categoria: "Frutta",
 emoji: "🍓",
-foto: "images/fragole-panna.jpeg"
+foto: "immagini/fragole-panna.jpeg"
 },
 
 {
 nome: "Pesche",
 categoria: "Frutta",
 emoji: "🍑",
-foto: "images/pesche.jpeg"
+foto: "immagini/pesche.jpeg"
 },
 
 {
 nome: "Angurie",
 categoria: "Frutta",
 emoji: "🍉",
-foto: "images/angurie.jpeg"
+foto: "immagini/angurie.jpeg"
 },
 
 {
 nome: "Uova al tegamino",
 categoria: "Speciali",
 emoji: "🍳",
-foto: "images/uova-tegamino.jpeg"
+foto: "immagini/uova-tegamino.jpeg"
 },
 
 {
 nome: "Ciliegie",
 categoria: "Frutta",
 emoji: "🍒",
-foto: "images/ciliegie.jpeg"
+foto: "immagini/ciliegie.jpeg"
 },
 
 {
 nome: "Dragibus",
 categoria: "Frizzanti",
 emoji: "🌈",
-foto: "images/dragibus.jpeg"
+foto: "immagini/dragibus.jpeg"
 },
 
 {
 nome: "Cuori blu frizzanti",
 categoria: "Cuori",
 emoji: "💙",
-foto: "images/cuori-blu.jpeg"
+foto: "immagini/cuori-blu.jpeg"
 },
 
 {
 nome: "Cuori viola frizzanti",
 categoria: "Cuori",
 emoji: "💜",
-foto: "images/cuori-viola.jpeg"
+foto: "immagini/cuori-viola.jpeg"
 },
 
 {
 nome: "Pinguini liquirizia",
 categoria: "Liquirizia",
 emoji: "🐧",
-foto: "images/pinguini-liquirizia.jpeg"
+foto: "immagini/pinguini-liquirizia.jpeg"
 },
 
 {
 nome: "Liquirizia tubi ripieni",
 categoria: "Liquirizia",
 emoji: "🖤",
-foto: "images/tubi-liquirizia.jpeg"
+foto: "immagini/tubi-liquirizia.jpeg"
 },
 
 {
 nome: "Girella liquirizia",
 categoria: "Liquirizia",
 emoji: "🌀",
-foto: "images/girella-liquirizia.jpeg"
+foto: "immagini/girella-liquirizia.jpeg"
 },
 
 {
 nome: "Pesci liquirizia",
 categoria: "Liquirizia",
 emoji: "🐟",
-foto: "images/pesci-liquirizia.jpeg"
+foto: "immagini/pesci-liquirizia.jpeg"
 },
 
 {
 nome: "Barchette liquirizia",
 categoria: "Liquirizia",
 emoji: "⛵",
-foto: "images/barchette-liquirizia.jpeg"
+foto: "immagini/barchette-liquirizia.jpeg"
 },
 
 {
 nome: "Marshmallow",
 categoria: "Marshmallow",
 emoji: "☁️",
-foto: "images/marshmallow.jpeg"
+foto: "immagini/marshmallow.jpeg"
 },
 
 {
 nome: "Twist panna e fragola",
 categoria: "Marshmallow",
 emoji: "🍥",
-foto: "images/twist-panna-fragola.jpeg"
+foto: "immagini/twist-panna-fragola.jpeg"
 },
 
 {
 nome: "Delfini",
 categoria: "Animali",
 emoji: "🐬",
-foto: "images/delfini.jpeg"
+foto: "immagini/delfini.jpeg"
 },
 
 {
 nome: "Pesci twist colorati",
 categoria: "Animali",
 emoji: "🐟",
-foto: "images/pesci-twist.jpeg"
+foto: "immagini/pesci-twist.jpeg"
 },
 
 {
 nome: "Tartarughe ripiene",
 categoria: "Animali",
 emoji: "🐢",
-foto: "images/tartarughe-ripiene.jpeg"
+foto: "immagini/tartarughe-ripiene.jpeg"
 },
 
 {
 nome: "Fettine di pizza",
 categoria: "Speciali",
 emoji: "🍕",
-foto: "images/fettine-pizza.jpeg"
+foto: "immagini/fettine-pizza.jpeg"
 },
 
 {
 nome: "Ananas gommose",
 categoria: "Frutta",
 emoji: "🍍",
-foto: "images/ananas.jpeg"
+foto: "immagini/ananas.jpeg"
 },
 
 {
 nome: "Ananas zuccherate",
 categoria: "Frutta",
 emoji: "🍍",
-foto: "images/ananas-zuccherate.jpeg"
+foto: "immagini/ananas-zuccherate.jpeg"
 },
 
 {
 nome: "Stelle frizzanti",
 categoria: "Frizzanti",
 emoji: "⭐",
-foto: "images/stelle-frizzanti.jpeg"
+foto: "immagini/stelle-frizzanti.jpeg"
 },
 
 {
 nome: "Topolini con coda",
 categoria: "Animali",
 emoji: "🐭",
-foto: "images/topolini.jpeg"
+foto: "immagini/topolini.jpeg"
 },
 
 {
 nome: "Unicorni",
 categoria: "Animali",
 emoji: "🦄",
-foto: "images/unicorni.jpeg"
+foto: "immagini/unicorni.jpeg"
 },
 
 {
 nome: "More granellate",
 categoria: "Frutta",
 emoji: "🫐",
-foto: "images/more-granellate.jpeg"
+foto: "immagini/more-granellate.jpeg"
 },
 
 {
 nome: "Occhi gommosi",
 categoria: "Speciali",
 emoji: "👁️",
-foto: "images/occhi-gommosi.jpeg"
+foto: "immagini/occhi-gommosi.jpeg"
 },
 
 {
 nome: "Cervelletti",
 categoria: "Speciali",
 emoji: "🧠",
-foto: "images/cervelletti.jpeg"
+foto: "immagini/cervelletti.jpeg"
 },
 
 {
 nome: "Dentiere",
 categoria: "Speciali",
 emoji: "🦷",
-foto: "images/dentiere.jpeg"
+foto: "immagini/dentiere.jpeg"
 },
 
 {
 nome: "Carote",
 categoria: "Speciali",
 emoji: "🥕",
-foto: "images/carote.jpeg"
+foto: "immagini/carote.jpeg"
 },
 
 {
 nome: "Bandierine frizzanti",
 categoria: "Frizzanti",
 emoji: "🚩",
-foto: "images/bandierine.jpeg"
+foto: "immagini/bandierine.jpeg"
 },
 
 {
 nome: "Ciucci chiavi a coca cola",
 categoria: "Cola",
 emoji: "🥤",
-foto: "images/ciucci-coca-cola.jpeg"
+foto: "immagini/ciucci-coca-cola.jpeg"
 },
 
 {
 nome: "Ciucci frutta colorate",
 categoria: "Frutta",
 emoji: "🍭",
-foto: "images/ciucci-frutta.jpeg"
+foto: "immagini/ciucci-frutta.jpeg"
 },
 
 {
 nome: "Ciucci frutta colorate zuccherate frizzanti",
 categoria: "Frizzanti",
 emoji: "🍬",
-foto: "images/ciucci-frizzanti.jpeg"
+foto: "immagini/ciucci-frizzanti.jpeg"
 },
 
 {
 nome: "Fragole rosse",
 categoria: "Frutta",
 emoji: "🍓",
-foto: "images/fragole-rosse.jpeg"
+foto: "immagini/fragole-rosse.jpeg"
 },
 
 {
 nome: "Vermetti gommosi",
 categoria: "Frizzanti",
 emoji: "🐛",
-foto: "images/vermetti.jpeg"
+foto: "immagini/vermetti.jpeg"
 },
 
 {
 nome: "Vermetti colorati frizzanti",
 categoria: "Frizzanti",
 emoji: "🐛",
-foto: "images/vermetti-colorati.jpeg"
+foto: "immagini/vermetti-colorati.jpeg"
 },
 
 {
 nome: "Palline piccole colorate",
 categoria: "Frizzanti",
 emoji: "⚪",
-foto: "images/palline-colorate.jpeg"
+foto: "immagini/palline-colorate.jpeg"
   
 },
 
@@ -299,112 +299,112 @@ foto: "images/palline-colorate.jpeg"
 nome: "Labbra rosse",
 categoria: "Speciali",
 emoji: "💋",
-foto: "images/labbra-rosse.jpeg"
+foto: "immagini/labbra-rosse.jpeg"
 },
 
 {
 nome: "Orsetti colorati zuccherati frizzanti",
 categoria: "Animali",
 emoji: "🐻",
-foto: "images/orsetti-colorati.jpeg"
+foto: "immagini/orsetti-colorati.jpeg"
 },
 
 {
 nome: "Cuori rossi grandi",
 categoria: "Cuori",
 emoji: "❤️",
-foto: "images/cuori-rossi-grandi.jpeg"
+foto: "immagini/cuori-rossi-grandi.jpeg"
 },
 
 {
 nome: "Vermi rossi gialli e arancioni",
 categoria: "Frizzanti",
 emoji: "🐛",
-foto: "images/vermi-colorati.jpeg"
+foto: "immagini/vermi-colorati.jpeg"
 },
 
 {
 nome: "Bastoncini rossi con ripieno bianco",
 categoria: "Liquirizia",
 emoji: "🍬",
-foto: "images/bastoncini-liquirizia.jpeg"
+foto: "immagini/bastoncini-liquirizia.jpeg"
 },
 
 {
 nome: "Banane",
 categoria: "Frutta",
 emoji: "🍌",
-foto: "images/banane.jpeg"
+foto: "immagini/banane.jpeg"
 },
 
 {
 nome: "Anelli tutti colorati frizzanti",
 categoria: "Frizzanti",
 emoji: "⭕",
-foto: "images/anelli-frizzanti.jpeg"
+foto: "immagini/anelli-frizzanti.jpeg"
 },
 
 {
 nome: "Rana formato XXL",
 categoria: "XXL",
 emoji: "🐸",
-foto: "images/rana-xxl.jpeg"
+foto: "immagini/rana-xxl.jpeg"
 },
 
 {
 nome: "Orso formato XXL",
 categoria: "XXL",
 emoji: "🐻",
-foto: "images/orso-xxl.jpeg"
+foto: "immagini/orso-xxl.jpeg"
 },
 
 {
 nome: "Ossa panna e fragola rosa e bianche",
 categoria: "Speciali",
 emoji: "🦴",
-foto: "images/ossa-panna-fragola.jpeg"
+foto: "immagini/ossa-panna-fragola.jpeg"
 },
 
 {
 nome: "Dita rosa con smalto rosso gommoso",
 categoria: "Speciali",
 emoji: "💅",
-foto: "images/dita-rosa.jpeg"
+foto: "immagini/dita-rosa.jpeg"
 },
 
 {
 nome: "Cream caramel budino gommoso",
 categoria: "Speciali",
 emoji: "🍮",
-foto: "images/cream-caramel.jpeg"
+foto: "immagini/cream-caramel.jpeg"
 },
 
 {
 nome: "Piede zuccherato colorato",
 categoria: "Speciali",
 emoji: "🦶",
-foto: "images/piede-zuccherato.jpeg"
+foto: "immagini/piede-zuccherato.jpeg"
 },
 
 {
 nome: "Giuggoline piccole zuccherate colorate",
 categoria: "Frizzanti",
 emoji: "🍬",
-foto: "images/giuggoline.jpeg"
+foto: "immagini/giuggoline.jpeg"
 },
 
 {
 nome: "Ragni zuccherati colorati",
 categoria: "Animali",
 emoji: "🕷️",
-foto: "images/ragni.jpeg"
+foto: "immagini/ragni.jpeg"
 },
 
 {
 nome: "Stella marina gommosa grande",
 categoria: "Animali",
 emoji: "⭐",
-foto: "images/stella-marina.jpeg"
+foto: "immagini/stella-marina.jpeg"
 }
 
 ];
