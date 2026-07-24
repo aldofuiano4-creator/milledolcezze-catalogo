@@ -4,14 +4,14 @@ const caramelle = [
 nome: "Orsetti frutta",
 categoria: "Frutta",
 emoji: "🍬",
-foto: "IMG_8890.jpeg"
+foto: "images/IMG_8890.jpeg"
 },
 
 {
 nome: "Bottiglie cola",
 categoria: "Cola",
 emoji: "🥤",
-foto: "IMG_8889.jpeg"
+foto: "images/IMG_8889.jpeg"
 },
 
 {
