@@ -156,7 +156,7 @@ window.onload = function(){
 
             card.innerHTML =
 
-            "<img src='images/" + item.foto + "'>" +
+            "<img src='" + item.foto + "'>" +
 
             "<h3>" + item.emoji + " " + item.nome + "</h3>" +
 
