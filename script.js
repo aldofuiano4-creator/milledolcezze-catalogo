@@ -151,7 +151,7 @@ window.onload = function(){
 
             let card = document.createElement("div");
 
-            card.className = "caramella";
+         card.className = "card";
 
 
             card.innerHTML =
