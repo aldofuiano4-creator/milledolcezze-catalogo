@@ -2,16 +2,15 @@ let box = "";
 let limite = 0;
 let scelte = [];
 
+let categoriaAttuale = "Tutte";
+let ricercaAttuale = "";
+
 
 function scegliBox(nome, massimo){
 
     box = nome;
     limite = massimo;
     scelte = [];
-
-    document.getElementById("boxScelta").innerHTML =
-    "✅ Hai scelto Candy Box " + nome;
-
 
     aggiorna();
 
@@ -52,6 +51,15 @@ function aggiungiCaramella(nome){
 }
 
 
+function rimuovi(indice){
+
+    scelte.splice(indice, 1);
+
+    aggiorna();
+
+}
+
+
 function aggiorna(){
 
     let lista = document.getElementById("lista");
@@ -67,8 +75,8 @@ function aggiorna(){
             let elemento = document.createElement("li");
 
             elemento.innerHTML =
-(indice + 1) + ") " + caramella +
-" <button onclick=\"rimuovi(" + indice + ")\">❌ Rimuovi</button>";
+            (indice + 1) + ") " + caramella +
+            " <button onclick=\"rimuovi(" + indice + ")\">❌ Rimuovi</button>";
 
             lista.appendChild(elemento);
 
@@ -88,7 +96,107 @@ function aggiorna(){
 
     }
 
+
+    aggiornaProgress();
+
 }
+
+function mostraCaramelle(){
+
+    let contenitore = document.getElementById("caramelle");
+
+    if(!contenitore){
+        return;
+    }
+
+
+    contenitore.innerHTML = "";
+
+
+    caramelle.forEach(function(item){
+
+        let nomeMinuscolo = item.nome.toLowerCase();
+
+        let categoriaOk =
+        categoriaAttuale === "Tutte" ||
+        item.categoria === categoriaAttuale;
+
+
+        let ricercaOk =
+        nomeMinuscolo.includes(ricercaAttuale);
+
+
+        if(categoriaOk && ricercaOk){
+
+
+            let card = document.createElement("div");
+
+            card.className = "card";
+
+
+            card.innerHTML =
+
+            "<img src='" + item.foto + "'>" +
+
+            "<h3>" + item.emoji + " " + item.nome + "</h3>" +
+
+            "<button onclick=\"aggiungiCaramella('" +
+            item.nome.replace(/'/g, "\\'") +
+            "')\">Aggiungi</button>";
+
+
+            contenitore.appendChild(card);
+
+        }
+
+
+    });
+
+}
+
+
+
+function filtraCaramelle(){
+
+    let campo = document.getElementById("ricerca");
+
+
+    if(campo){
+
+        ricercaAttuale = campo.value.toLowerCase();
+
+    }
+
+
+    mostraCaramelle();
+
+}
+
+
+
+function filtraCategoria(categoria){
+
+    categoriaAttuale = categoria;
+
+    mostraCaramelle();
+
+}
+
+function aggiornaProgress(){
+
+    let progress = document.getElementById("progress");
+
+
+    if(progress && limite > 0){
+
+        let percentuale = (scelte.length / limite) * 100;
+
+        progress.style.width = percentuale + "%";
+
+    }
+
+}
+
 
 
 function ordina(){
@@ -114,10 +222,10 @@ function ordina(){
     let numero = "393669382980";
 
 
-let messaggio =
-"Ciao MILLEDOLCEZZE, vorrei ordinare:\n\n" +
-"🍬 Candy Box: " + box +
-"\n🍭 Gusti scelti:\n";
+    let messaggio =
+    "Ciao MILLEDOLCEZZE, vorrei ordinare:\n\n" +
+    "🍬 Candy Box: " + box +
+    "\n🍭 Gusti scelti:\n";
 
 
     scelte.forEach(function(caramella){
@@ -139,46 +247,9 @@ let messaggio =
 }
 
 
+
 window.onload = function(){
 
-    let contenitore = document.getElementById("caramelle");
-
-
-    if(contenitore){
-
-        caramelle.forEach(function(item){
-
-
-            let card = document.createElement("div");
-
-         card.className = "card";
-
-
-            card.innerHTML =
-
-            "<img src='" + item.foto + "'>" +
-
-            "<h3>" + item.emoji + " " + item.nome + "</h3>" +
-
-            "<button onclick=\"aggiungiCaramella('" 
-            + item.nome.replace(/'/g, "\\'") +
-            "')\">Aggiungi</button>";
-
-
-            contenitore.appendChild(card);
-
-
-        });
-
-    }
+    mostraCaramelle();
 
 };
-
-
-function rimuovi(indice){
-
-    scelte.splice(indice, 1);
-
-    aggiorna();
-
-}
