@@ -295,3 +295,67 @@ header p{
     }
 
 }
+
+.hero-info{
+    display:flex;
+    gap:15px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin:25px 0;
+}
+
+.hero-info div{
+    background:#ffe3f0;
+    border-radius:20px;
+    padding:18px;
+    width:220px;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+    transition:.2s;
+}
+
+.hero-info div:hover{
+    transform:translateY(-5px);
+}
+
+.hero-info div:first-child{
+    background:#fff0a8;
+}
+
+.hero-info div:nth-child(2){
+    background:#ffd6eb;
+}
+
+.hero-info div:nth-child(3){
+    background:#d8f7ff;
+}
+
+.hero-info h3{
+    margin:8px 0;
+    color:#ff4fa3;
+    font-size:20px;
+}
+
+.hero-info p{
+    font-size:15px;
+    font-weight:normal;
+}
+
+.frase{
+    font-size:20px;
+    font-weight:bold;
+    color:#ff4fa3;
+}
+
+
+@media(max-width:600px){
+
+    .hero-info{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .hero-info div{
+        width:90%;
+    }
+
+}
