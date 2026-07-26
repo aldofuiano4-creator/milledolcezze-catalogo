@@ -374,6 +374,7 @@ header p{
     width:0%;
     background:#ff4fa3;
     transition:width 0.3s ease;
+    display:block;
 }
 
 .barra-container {
