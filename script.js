@@ -1,85 +1,112 @@
 let box = "";
+
 let limite = 0;
+
 let scelte = [];
 
+
 let categoriaAttuale = "Tutte";
+
 let ricercaAttuale = "";
+
 
 
 
 function scegliBox(nome, massimo){
 
+
     box = nome;
+
     limite = massimo;
+
     scelte = [];
 
+
     aggiorna();
+
 
 }
 
 
-
-function aggiungi(nome){
-
-    if(box === ""){
-
-        alert("Scegli prima una Candy Box");
-
-        return;
-
-    }
-
-
-    if(scelte.length >= limite){
-
-        alert("Hai raggiunto il limite di gusti");
-
-        return;
-
-    }
-
-
-    scelte.push(nome);
-
-    aggiorna();
-
-}
 
 
 
 function aggiungiCaramella(nome){
 
-    aggiungi(nome);
+
+    if(box === ""){
+
+
+        alert("Scegli prima una Candy Box");
+
+
+        return;
+
+
+    }
+
+
+
+    if(scelte.length >= limite){
+
+
+        alert("Hai raggiunto il limite di gusti");
+
+
+        return;
+
+
+    }
+
+
+
+    scelte.push(nome);
+
+
+    aggiorna();
+
 
 }
+
+
 
 
 
 function rimuovi(indice){
 
+
     scelte.splice(indice,1);
+
 
     aggiorna();
 
+
 }
+
+
 
 
 
 function aggiorna(){
 
 
-    let lista = document.getElementById("listaScelte");
+    let lista = document.getElementById("lista");
+
 
 
     if(lista){
 
+
         lista.innerHTML = "";
+
 
 
         scelte.forEach(function(caramella, indice){
 
 
+
             let elemento = document.createElement("li");
+
 
 
             elemento.innerHTML =
@@ -87,10 +114,14 @@ function aggiorna(){
             (indice + 1) +
             ") " +
             caramella +
-            " <button onclick=\"rimuovi(" + indice + ")\">❌</button>";
+            " <button onclick=\"rimuovi(" +
+            indice +
+            ")\">❌</button>";
+
 
 
             lista.appendChild(elemento);
+
 
 
         });
@@ -100,19 +131,26 @@ function aggiorna(){
 
 
 
-    let riepilogo = document.getElementById("boxScelto");
+    let riepilogo = document.getElementById("boxScelta");
+
 
 
     if(riepilogo){
 
+
+
         if(box === ""){
+
 
             riepilogo.innerHTML =
             "Nessuna Candy Box selezionata";
 
-        } else {
+
+        }else{
+
 
             riepilogo.innerHTML =
+
             "🍬 Candy Box scelta: " +
             box +
             "<br>Gusti scelti: " +
@@ -120,32 +158,21 @@ function aggiorna(){
             "/" +
             limite;
 
+
         }
 
-    }
-
-
-
-    let contatore = document.getElementById("contatore");
-
-
-    if(contatore){
-
-        contatore.innerHTML =
-        "Caramelle scelte: " +
-        scelte.length;
 
     }
+
 
 
 }
 
-
-
 function mostraCaramelle(){
 
 
-    let contenitore = document.getElementById("catalogo");
+    let contenitore = document.getElementById("caramelle");
+
 
 
     if(!contenitore){
@@ -153,6 +180,7 @@ function mostraCaramelle(){
         return;
 
     }
+
 
 
     contenitore.innerHTML = "";
@@ -190,7 +218,12 @@ function mostraCaramelle(){
 
             card.innerHTML =
 
-            "<img src='" + item.foto + "'>" +
+
+            "<img src='" +
+            item.foto +
+            "'>" +
+
+
 
             "<h3>" +
             item.emoji +
@@ -198,11 +231,17 @@ function mostraCaramelle(){
             item.nome +
             "</h3>" +
 
+
+
             "<button onclick=\"aggiungiCaramella('" +
 
             item.nome.replace(/'/g,"\\'") +
 
-            "')\">➕ Aggiungi</button>";
+            "')\">" +
+
+            "➕ Aggiungi" +
+
+            "</button>";
 
 
 
@@ -223,7 +262,7 @@ function mostraCaramelle(){
 
 
 
-function filtra(categoria){
+function filtraCategoria(categoria){
 
 
     categoriaAttuale = categoria;
@@ -237,37 +276,41 @@ function filtra(categoria){
 
 
 
+
 function filtraCaramelle(){
 
 
     let campo = document.getElementById("ricerca");
 
 
+
     if(campo){
 
-        ricercaAttuale =
-        campo.value.toLowerCase();
+
+        ricercaAttuale = campo.value.toLowerCase();
+
 
     }
+
 
 
     mostraCaramelle();
 
 
+
 }
-
-
-
-
 
 function ordina(){
 
 
     if(box === ""){
 
+
         alert("Scegli prima una Candy Box");
 
+
         return;
+
 
     }
 
@@ -275,11 +318,15 @@ function ordina(){
 
     if(scelte.length === 0){
 
+
         alert("Scegli almeno un gusto");
+
 
         return;
 
+
     }
+
 
 
 
@@ -292,7 +339,6 @@ function ordina(){
     "Ciao MILLEDOLCEZZE, vorrei ordinare:\n\n" +
 
     "🍬 Candy Box: " +
-
     box +
 
     "\n\n🍭 Gusti scelti:\n";
@@ -306,9 +352,7 @@ function ordina(){
         messaggio +=
 
         "- " +
-
         caramella +
-
         "\n";
 
 
@@ -330,10 +374,10 @@ function ordina(){
 
 
 
-    window.open(link,"_blank");
+    window.open(link, "_blank");
+
 
 }
-
 
 
 
