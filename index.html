@@ -2,6 +2,7 @@
 <html lang="it">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -11,138 +12,271 @@
 
 </head>
 
+
 <body>
+
 
 <header>
 
-<img src="immagini/Mille dolcezze caramelle.png" alt="MILLEDOLCEZZE" class="logo">
+<img src="immagini/Mille dolcezze caramelle.png" 
+class="logo" 
+alt="MILLEDOLCEZZE">
+
 
 <h1>🍬 MILLEDOLCEZZE 🍬</h1>
 
 <p>
-Crea la tua Candy Box scegliendo le tue caramelle preferite!
+Crea la tua Candy Box con le tue caramelle preferite!
 </p>
 
 </header>
 
 
-<!-- QR CATALOGO -->
 
-<section class="qr-box">
+<section class="hero">
 
-<h2>📱 Scansiona il QR per il catalogo</h2>
 
-<img src="immagini/A48FC8B8-11D2-40A8-B126-5E6955DBB3FF.jpeg" alt="QR Catalogo MILLEDOLCEZZE" class="qr">
+<h2>
+Scegli, crea e gusta la tua Candy Box
+</h2>
+
+
+<p class="frase">
+Tante caramelle gommose per un'esperienza dolcissima 🍭
+</p>
+
+
+
+<div class="hero-info">
+
+
+<div>
+
+<h3>🍬 1 Kg</h3>
+
+<p>
+€12<br>
+10 gusti
+</p>
+
+</div>
+
+
+<div>
+
+<h3>🍬 1,5 Kg</h3>
+
+<p>
+€17<br>
+12 gusti
+</p>
+
+</div>
+
+
+<div>
+
+<h3>🍬 2 Kg</h3>
+
+<p>
+€22,50<br>
+15 gusti
+</p>
+
+</div>
+
+
+</div>
+
 
 </section>
 
 
-<!-- SCELTA CANDY BOX -->
 
-<section class="box-section">
+
+<section class="box-scelta">
+
 
 <h2>Scegli la tua Candy Box</h2>
 
-<div class="box-container">
+
+
+<div class="box-buttons">
+
 
 <button onclick="scegliBox('Candy Box 1 Kg',10)">
-🍬 1 Kg<br>
-€12<br>
-10 gusti
+🍬 1 Kg
 </button>
+
 
 
 <button onclick="scegliBox('Candy Box 1,5 Kg',12)">
-🍬 1,5 Kg<br>
-€17<br>
-12 gusti
+🍬 1,5 Kg
 </button>
+
 
 
 <button onclick="scegliBox('Candy Box 2 Kg',15)">
-🍬 2 Kg<br>
-€22,50<br>
-15 gusti
+🍬 2 Kg
 </button>
 
+
 </div>
+
+
 
 </section>
 
 
-<div id="boxScelto">
+
+<div id="boxScelta">
+
 Nessuna Candy Box selezionata
+
 </div>
+
+
+
+<div class="barra">
+
+<div id="progress"></div>
+
+</div>
+
 
 
 <div id="contatore">
+
 Caramelle scelte: 0
+
 </div>
 
-<!-- FILTRO CATEGORIE -->
+<!-- QR CATALOGO -->
 
-<section class="categorie">
+<section class="box-scelta">
 
-<h2>Filtra caramelle</h2>
+<h2>📱 Catalogo MILLEDOLCEZZE</h2>
 
-<div class="filtri">
+<img src="immagini/A48FC8B8-11D2-40A8-B126-5E6955DBB3FF.jpeg"
+alt="QR Catalogo"
+class="qr">
 
-<button onclick="filtra('Tutte')">
+<p>
+Scansiona il QR e guarda tutte le nostre caramelle 🍬
+</p>
+
+</section>
+
+
+
+<!-- RICERCA -->
+
+<section class="box-scelta">
+
+<h2>Cerca la tua caramella</h2>
+
+<input 
+type="text" 
+id="ricerca" 
+placeholder="🔍 Cerca caramella..."
+onkeyup="filtraCaramelle()">
+
+</section>
+
+
+
+
+<!-- CATEGORIE -->
+
+<section class="box-scelta">
+
+<h2>Filtra per categoria</h2>
+
+
+<div class="categorie">
+
+
+<button onclick="filtraCategoria('Tutte')">
 🍭 Tutte
 </button>
 
-<button onclick="filtra('Gommose')">
+
+<button onclick="filtraCategoria('Gommose')">
 🍬 Gommose
 </button>
 
-<button onclick="filtra('Frizzanti')">
+
+<button onclick="filtraCategoria('Frizzanti')">
 ✨ Frizzanti
 </button>
 
-<button onclick="filtra('Liquirizia')">
+
+<button onclick="filtraCategoria('Liquirizia')">
 🖤 Liquirizia
 </button>
 
-<button onclick="filtra('Marshmallow')">
+
+<button onclick="filtraCategoria('Marshmallow')">
 ☁️ Marshmallow
 </button>
 
+
 </div>
+
 
 </section>
 
 
 
-<!-- GALLERIA CARAMELLE -->
 
-<section>
+<!-- CARAMELLE -->
 
-<h2>Le nostre caramelle</h2>
 
-<div id="catalogo" class="catalogo">
+<section class="box-scelta">
+
+
+<h2>
+Scegli le tue caramelle
+</h2>
+
+
+<div id="caramelle">
 
 </div>
+
 
 </section>
 
 
 
-<!-- SCELTE CLIENTE -->
+
+<!-- RIEPILOGO -->
+
 
 <section class="riepilogo">
 
-<h2>La tua Candy Box</h2>
 
-<ul id="listaScelte">
+<h2>
+La tua Candy Box
+</h2>
+
+
+<ul id="lista">
 
 </ul>
 
 
-<button onclick="ordina()">
+
+<button class="whatsapp" onclick="ordina()">
+
 📲 Ordina su WhatsApp
+
 </button>
 
+
+
 </section>
+
 
 
 
@@ -156,9 +290,11 @@ Caramelle scelte: 0
 
 
 
+
 <script src="caramelle.js"></script>
 
 <script src="script.js"></script>
+
 
 
 </body>
