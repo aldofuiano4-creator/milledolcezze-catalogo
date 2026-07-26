@@ -33,8 +33,7 @@ const caramelle = [
     categoria: "Gommose",
     emoji: "🐊",
     foto: "immagini/IMG_8908.webp"
-}
-
+},
 {
     nome: "Cuori ripieni",
     categoria: "Gommose",
