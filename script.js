@@ -163,7 +163,16 @@ function aggiorna(){
 
 
     }
+    
+let progress = document.getElementById("progress");
 
+if(progress && limite > 0){
+
+    let percentuale = (scelte.length / limite) * 100;
+
+    progress.style.width = percentuale + "%";
+
+}
 
 
 }
