@@ -379,7 +379,7 @@ const caramelle = [
 },
 
 {
-  nome: "Banane Haribo",
+  nome: "Banane Gommose",
   categoria: "Gommose",
   emoji: "🍌",
   foto: "immagini/IMG_8967.webp"
