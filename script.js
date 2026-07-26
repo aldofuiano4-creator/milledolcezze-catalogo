@@ -98,7 +98,7 @@ function aggiorna(){
 
 
 
-    let riepilogo = document.getElementById("boxScelta");
+let riepilogo = document.getElementById("testoBox");
 
 
     if(riepilogo){
