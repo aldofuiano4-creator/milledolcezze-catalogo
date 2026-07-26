@@ -2,11 +2,10 @@
 <html lang="it">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>MILLEDOLCEZZE - Crea la tua Candy Box</title>
+<title>MILLEDOLCEZZE - Candy Box</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -16,141 +15,153 @@
 
 <header>
 
-<img src="Mille dolcezze caramelle.png" class="logo">
+<img src="immagini/logo.png" alt="MILLEDOLCEZZE" class="logo">
 
 <h1>🍬 MILLEDOLCEZZE 🍬</h1>
 
-<p>Il mondo delle caramelle gommose</p>
+<p>
+Crea la tua Candy Box scegliendo le tue caramelle preferite!
+</p>
 
 </header>
 
 
-<section class="hero">
+<!-- QR CATALOGO -->
 
-<h2>🍬 Crea la tua Candy Box personalizzata 🍬</h2>
+<section class="qr-box">
 
-<p>
-Scegli i tuoi gusti preferiti e crea una box unica firmata 
-<strong>MILLEDOLCEZZE</strong>.
-</p>
+<h2>📱 Scansiona il QR per il catalogo</h2>
 
-<div class="hero-info">
-
-<div>
-🍭
-<h3>Oltre 60 gusti</h3>
-<p>Gommose, frizzanti, liquirizie e marshmallow.</p>
-</div>
-
-<div>
-🎁
-<h3>Box personalizzata</h3>
-<p>Scegli tu le caramelle che ami di più.</p>
-</div>
-
-<div>
-📲
-<h3>Ordine facile</h3>
-<p>Invia la tua scelta direttamente su WhatsApp.</p>
-</div>
-
-</div>
-
-<p class="frase">
-✨ Tantissime caramelle gommose da scegliere ✨
-</p>
-
-<a href="#configuratore" class="inizia">
-🍬 Crea la tua Candy Box
-</a>
+<img src="immagini/qr-catalogo.png" 
+alt="QR Catalogo MILLEDOLCEZZE" 
+class="qr">
 
 </section>
 
 
-<section class="box-scelta">
+<!-- SCELTA CANDY BOX -->
 
-<h2>1️⃣ Scegli la tua Candy Box</h2>
+<section class="box-section">
 
-<div class="box-buttons">
+<h2>Scegli la tua Candy Box</h2>
 
-<button onclick="scegliBox('1 kg - €12',10)">Candy Box 1 kg - €12</button>
+<div class="box-container">
 
-<button onclick="scegliBox('1.5 kg - €17',12)">Candy Box 1.5 kg - €17</button>
+<button onclick="scegliBox('Candy Box 1 Kg',10)">
+🍬 1 Kg<br>
+€12<br>
+10 gusti
+</button>
 
-<button onclick="scegliBox('2 kg - €22,50',15)">Candy Box 2 kg - €22,50</button>
+
+<button onclick="scegliBox('Candy Box 1,5 Kg',12)">
+🍬 1,5 Kg<br>
+€17<br>
+12 gusti
+</button>
+
+
+<button onclick="scegliBox('Candy Box 2 Kg',15)">
+🍬 2 Kg<br>
+€22,50<br>
+15 gusti
+</button>
 
 </div>
 
 </section>
 
 
-<div id="boxScelta"></div>
-
-
-<section id="configuratore">
-
-<h2>2️⃣ Scegli le tue caramelle</h2>
-
-<p id="contatore">
-Scegli prima la Candy Box
-</p>
-
-<div class="barra">
-<div id="progress"></div>
-</div>
-
-<input
-type="text"
-id="ricerca"
-placeholder="🔍 Cerca una caramella..."
-onkeyup="filtraCaramelle()">
-
-
-<div class="categorie">
-
-<button onclick="filtraCategoria('Tutte')">
-Tutte
-</button>
-
-<button onclick="filtraCategoria('Gommose')">
-Gommose
-</button>
-
-<button onclick="filtraCategoria('Frizzanti')">
-Frizzanti
-</button>
-
-<button onclick="filtraCategoria('Liquirizia')">
-Liquirizia
-</button>
-
-<button onclick="filtraCategoria('Marshmallow')">
-Marshmallow
-</button>
-
+<div id="boxScelto">
+Nessuna Candy Box selezionata
 </div>
 
 
-<div id="caramelle"></div>
+<div id="contatore">
+Caramelle scelte: 0
+</div>
+
+<!-- FILTRO CATEGORIE -->
+
+<section class="categorie">
+
+<h2>Filtra caramelle</h2>
+
+<div class="filtri">
+
+<button onclick="filtra('Tutte')">
+🍭 Tutte
+</button>
+
+<button onclick="filtra('Gommose')">
+🍬 Gommose
+</button>
+
+<button onclick="filtra('Frizzanti')">
+✨ Frizzanti
+</button>
+
+<button onclick="filtra('Liquirizia')">
+🖤 Liquirizia
+</button>
+
+<button onclick="filtra('Marshmallow')">
+☁️ Marshmallow
+</button>
+
+</div>
 
 </section>
 
+
+
+<!-- GALLERIA CARAMELLE -->
+
+<section>
+
+<h2>Le nostre caramelle</h2>
+
+<div id="catalogo" class="catalogo">
+
+</div>
+
+</section>
+
+
+
+<!-- SCELTE CLIENTE -->
 
 <section class="riepilogo">
 
-<h2>3️⃣ Il tuo ordine</h2>
+<h2>La tua Candy Box</h2>
 
-<ul id="lista"></ul>
+<ul id="listaScelte">
 
-<button class="whatsapp" onclick="ordina()">
+</ul>
+
+
+<button onclick="ordina()">
 📲 Ordina su WhatsApp
 </button>
 
 </section>
 
 
+
+<footer>
+
+<p>
+© MILLEDOLCEZZE 🍬
+</p>
+
+</footer>
+
+
+
 <script src="caramelle.js"></script>
+
 <script src="script.js"></script>
+
 
 </body>
 
