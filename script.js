@@ -4,16 +4,13 @@ let limite = 0;
 
 let scelte = [];
 
-
 let categoriaAttuale = "Tutte";
 
 let ricercaAttuale = "";
 
 
 
-
 function scegliBox(nome, massimo){
-
 
     box = nome;
 
@@ -21,69 +18,47 @@ function scegliBox(nome, massimo){
 
     scelte = [];
 
-
     aggiorna();
 
-
 }
-
-
 
 
 
 function aggiungiCaramella(nome){
 
-
     if(box === ""){
-
 
         alert("Scegli prima una Candy Box");
 
-
         return;
 
-
     }
-
 
 
     if(scelte.length >= limite){
 
-
         alert("Hai raggiunto il limite di gusti");
 
-
         return;
-
 
     }
 
 
-
     scelte.push(nome);
-
 
     aggiorna();
 
-
 }
-
-
 
 
 
 function rimuovi(indice){
 
-
-    scelte.splice(indice,1);
-
+    scelte.splice(indice, 1);
 
     aggiorna();
 
-
 }
-
-
 
 
 
@@ -93,20 +68,15 @@ function aggiorna(){
     let lista = document.getElementById("lista");
 
 
-
     if(lista){
 
-
         lista.innerHTML = "";
-
 
 
         scelte.forEach(function(caramella, indice){
 
 
-
             let elemento = document.createElement("li");
-
 
 
             elemento.innerHTML =
@@ -119,13 +89,10 @@ function aggiorna(){
             ")\">❌</button>";
 
 
-
             lista.appendChild(elemento);
 
 
-
         });
-
 
     }
 
@@ -134,20 +101,15 @@ function aggiorna(){
     let riepilogo = document.getElementById("boxScelta");
 
 
-
     if(riepilogo){
 
-
-
         if(box === ""){
-
 
             riepilogo.innerHTML =
             "Nessuna Candy Box selezionata";
 
 
-        }else{
-
+        } else {
 
             riepilogo.innerHTML =
 
@@ -158,24 +120,33 @@ function aggiorna(){
             "/" +
             limite;
 
-
         }
+
+    }
+
+    let progress = document.getElementById("progress");
+
+
+    if(progress && limite > 0){
+
+
+        let percentuale =
+
+        (scelte.length / limite) * 100;
+
+
+        progress.style.width =
+
+        percentuale + "%";
 
 
     }
-    
-let progress = document.getElementById("progress");
 
-if(progress && limite > 0){
 
-    let percentuale = (scelte.length / limite) * 100;
-
-    progress.style.width = percentuale + "%";
 
 }
 
 
-}
 
 function mostraCaramelle(){
 
@@ -183,13 +154,11 @@ function mostraCaramelle(){
     let contenitore = document.getElementById("caramelle");
 
 
-
     if(!contenitore){
 
         return;
 
     }
-
 
 
     contenitore.innerHTML = "";
@@ -227,19 +196,22 @@ function mostraCaramelle(){
 
             card.innerHTML =
 
-
             "<img src='" +
+
             item.foto +
+
             "'>" +
 
 
-
             "<h3>" +
-            item.emoji +
-            " " +
-            item.nome +
-            "</h3>" +
 
+            item.emoji +
+
+            " " +
+
+            item.nome +
+
+            "</h3>" +
 
 
             "<button onclick=\"aggiungiCaramella('" +
@@ -261,13 +233,10 @@ function mostraCaramelle(){
         }
 
 
-
     });
 
 
-
 }
-
 
 
 
@@ -284,27 +253,24 @@ function filtraCategoria(categoria){
 
 
 
-
-
 function filtraCaramelle(){
 
 
     let campo = document.getElementById("ricerca");
 
 
-
     if(campo){
 
 
-        ricercaAttuale = campo.value.toLowerCase();
+        ricercaAttuale =
+
+        campo.value.toLowerCase();
 
 
     }
 
 
-
     mostraCaramelle();
-
 
 
 }
@@ -338,7 +304,6 @@ function ordina(){
 
 
 
-
     let numero = "393669382980";
 
 
@@ -348,10 +313,10 @@ function ordina(){
     "Ciao MILLEDOLCEZZE, vorrei ordinare:\n\n" +
 
     "🍬 Candy Box: " +
+
     box +
 
     "\n\n🍭 Gusti scelti:\n";
-
 
 
 
@@ -361,12 +326,13 @@ function ordina(){
         messaggio +=
 
         "- " +
+
         caramella +
+
         "\n";
 
 
     });
-
 
 
 
@@ -379,7 +345,6 @@ function ordina(){
     "?text=" +
 
     encodeURIComponent(messaggio);
-
 
 
 
@@ -398,3 +363,4 @@ window.onload = function(){
 
 
 };
+
