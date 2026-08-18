@@ -446,6 +446,135 @@ const caramelle = [
     categoria: "Frizzanti",
     emoji: "🍉",
     foto: "immagini/IMG_8976.jpeg"
-}
+},
+
+{
+  nome: "More pralinate",
+  categoria: "Gommose",
+  emoji: "🫐",
+  foto: "immagini/IMG_9017.jpeg"
+},
+{
+  nome: "Puffi gommosi",
+  categoria: "Gommose",
+  emoji: "🧸",
+  foto: "immagini/IMG_9016.jpeg"
+},
+{
+  nome: "Mango ripieni",
+  categoria: "Gommose",
+  emoji: "🥭",
+  foto: "immagini/IMG_9015.jpeg"
+},
+{
+  nome: "Budini gommosi",
+  categoria: "Gommose",
+  emoji: "🍮",
+  foto: "immagini/IMG_9014.jpeg"
+},
+{
+  nome: "Cream caramel",
+  categoria: "Gommose",
+  emoji: "🍮",
+  foto: "immagini/IMG_9013.jpeg"
+},
+{
+  nome: "Farfalle gommose",
+  categoria: "Gommose",
+  emoji: "🦋",
+  foto: "immagini/IMG_9012.jpeg"
+},
+{
+  nome: "Teschi ripieni",
+  categoria: "Gommose",
+  emoji: "💀",
+  foto: "immagini/IMG_9011.jpeg"
+},
+{
+  nome: "Cuori twist",
+  categoria: "Gommose",
+  emoji: "💗",
+  foto: "immagini/IMG_9010.jpeg"
+},
+{
+  nome: "Uova ripiene",
+  categoria: "Gommose",
+  emoji: "🥚",
+  foto: "immagini/IMG_9009.jpeg"
+},
+{
+  nome: "Ciucci gommosi zuccherati",
+  categoria: "Gommose",
+  emoji: "🍭",
+  foto: "immagini/IMG_9008.jpeg"
+},
+{
+  nome: "Bottiglie cola zuccherate",
+  categoria: "Gommose",
+  emoji: "🥤",
+  foto: "immagini/IMG_9007.jpeg"
+},
+{
+  nome: "Coccodrilli zuccherati",
+  categoria: "Gommose",
+  emoji: "🐊",
+  foto: "immagini/IMG_9006.jpeg"
+},
+{
+  nome: "Angurie ananas",
+  categoria: "Gommose",
+  emoji: "🍉",
+  foto: "immagini/IMG_9005.jpeg"
+},
+{
+  nome: "Stelle colorate zuccherate",
+  categoria: "Gommose",
+  emoji: "⭐",
+  foto: "immagini/IMG_9004.jpeg"
+},
+{
+  nome: "Ciliegie zuccherate",
+  categoria: "Gommose",
+  emoji: "🍒",
+  foto: "immagini/IMG_9003.jpeg"
+},
+{
+  nome: "Patatine fritte frizzanti",
+  categoria: "Frizzanti",
+  emoji: "🍟",
+  foto: "immagini/IMG_9002.jpeg"
+},
+{
+  nome: "Angurie al lampone",
+  categoria: "Gommose",
+  emoji: "🍉",
+  foto: "immagini/IMG_9001.jpeg"
+},
+{
+  nome: "Piramidi anguria",
+  categoria: "Gommose",
+  emoji: "🍉",
+  foto: "immagini/IMG_8999.jpeg"
+},
+{
+  nome: "Mini tubetti frizzanti",
+  categoria: "Frizzanti",
+  emoji: "🧨",
+  foto: "immagini/IMG_8998.jpeg"
+},
+{
+  nome: "Ananas gommose",
+  categoria: "Gommose",
+  emoji: "🍍",
+  foto: "immagini/IMG_8997.jpeg"
+},
+{
+  nome: "Cono gelato",
+  categoria: "Gommose",
+  emoji: "🍦",
+  foto: "immagini/IMG_8996.jpeg"
+},
 
 ];
+
+
