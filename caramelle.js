@@ -442,7 +442,7 @@ const caramelle = [
 },
 
 {
-    nome: "Anguria gialla frizzante",
+    nome: "Anguria gialla gommosa",
     categoria: "Frizzanti",
     emoji: "🍉",
     foto: "immagini/IMG_8976.jpeg"
